@@ -188,7 +188,12 @@ footer p {
 
 @media (max-width: 767px) 
     {.conteudo1__h2{ 
-    font-size: 36px;
+    font-size: 2em;
+}}
+
+@media (max-width: 767px) 
+    {.conteudo1__p2{ 
+        font-size: 18px;
 }}
 
 @media (max-width: 767px) 
