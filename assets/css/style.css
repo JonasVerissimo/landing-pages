@@ -1,0 +1,301 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: #ffffff;
+}
+
+.bg1{
+    background-image: url(/landing-pages/assets/backgrounds/bg-lp.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    height: 773px;
+    align-items: center;
+}
+
+.bg1__contener{
+    width: 1200px;
+}
+
+.bg1__conteudo1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 520px;
+}
+
+.conteudo1__p1{
+    color: transparent;
+    background-image: linear-gradient(91.67deg, #00FF66 0%, #59FF92 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 3.3px;
+}
+
+.conteudo1__h2{
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+
+.conteudo1__p2{
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 390px;
+}
+
+.conteudo1__p3{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2.1px;
+}
+
+.bg2{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    height: auto;
+}
+
+.bg2__contener2{
+    max-width: 1200px;
+    padding: 20px 0px 90px 0px;
+}
+
+.titulos-h2{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2em;
+    letter-spacing: -.5px;
+}
+
+.contener2__filho1{
+    display: flex;
+    padding: 50px 0px 50px 0px;
+    gap: 20px;
+}
+
+.filho1__colunas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 39px;
+    background-size: cover;
+    background-color: transparent;
+    background-image: url(/landing-pages/assets/icones/Card\ Nova\ LP.svg);
+    width: 264px;
+}
+
+.icones{
+    width: 54px;
+    height: 54px;
+}
+
+.titulos-h3{
+    color: transparent;
+    background-image: linear-gradient(91.67deg, #00FF66 0%, #59FF92 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+
+
+.bg3{
+    background-image: url(/landing-pages/assets/backgrounds/bg-03.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    height: 620px;
+    align-items: center;
+}
+
+.bg3__contener3{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contener3__coluna1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 545px;
+}
+
+.bg3 img {
+    max-width: 400px;
+}
+
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: 0px;
+    padding: 10px 0;
+}
+
+@media (max-width: 1024px) 
+    {.bg1{
+        background-image: url(/landing-pages/assets/backgrounds/bg-lp-mobilepsd.webp);
+        background-position: 0px -178px;
+        background-size: 100%;
+        height: auto;
+}}
+
+@media (max-width: 767px) 
+    {.bg1{
+        background-position-y: -40px;
+        background-image: url(/landing-pages/assets/backgrounds/bg-lp-mobilepsd.webp);
+        background-size: 100%;
+        height: auto;
+}}
+
+@media (max-width: 1024px) 
+    {.bg1__contener{ 
+    width: 95%;}
+}
+
+@media (max-width: 767px) 
+    {.bg1__contener{ 
+    width: 90%;}
+}
+
+@media (max-width: 767px) 
+    {.conteudo1__h2{ 
+    font-size: 36px;
+}}
+
+@media (max-width: 767px) 
+    {.conteudo1__p3{ 
+        font-size: 15px;
+        letter-spacing: 0;
+}}
+
+@media (max-width: 767px) 
+    {.conteudo1__p1{ 
+        font-size: 16px;
+}}
+
+@media (max-width: 1024px) 
+    {.bg2__contener2{ 
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}}
+
+@media (max-width: 767px) 
+    {.titulos-h2{ 
+    font-size: 2em;
+}}
+
+@media (max-width: 1024px) {
+    .bg1__conteudo1{
+        width: 600px;
+        margin-top: 300px;
+        margin-bottom: 100px;
+        
+}}
+
+@media (max-width: 767px) {
+    .bg1__conteudo1{
+        width: 100%;
+        margin-top: 250px;
+        margin-bottom: 100px;
+        
+}}
+
+@media (max-width: 1024px) {
+    .contener2__filho1{
+        width: 100%;
+        flex-wrap: wrap;
+}}
+
+@media (max-width: 767px) {
+    .contener2__filho1{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+}}
+
+@media (max-width: 767px) {
+    .filho1__colunas{
+        margin: 0 0 30px 0 ;
+        padding: 40px;
+}}
+
+
+@media (max-width: 1024px) {
+    .bg3{
+        background-image: url(/landing-pages/assets/backgrounds/bg-03-mobile.jpg);
+        background-position: top;
+        background-size: contain;
+        padding: 80px 0 80px 0;
+        height: auto;
+}}
+
+@media (max-width: 767px) {
+    .bg3{
+        background-image: url(/landing-pages/assets/backgrounds/bg-03-mobile.jpg);
+        background-position: top;
+        background-size: cover;
+        height: auto;
+}}
+
+@media (max-width: 1024px) {
+    .bg3__contener3{
+        width: 95%;
+        flex-direction: column-reverse;
+}}
+
+@media (max-width: 767px) {
+    img{
+        width: 100%;
+}}
+
+@media (max-width: 767px) {
+    .bg3__contener3{
+        width: 90%;
+        flex-direction: column-reverse;
+}}
+
+@media (max-width: 767px) {
+    .bg3__contener3 img{
+        max-width: 100%;
+}}
+
+@media (max-width: 1024px) {
+    .contener3__coluna1{
+        max-width: 100%;
+}}
+
+@media (max-width: 767px) {
+    footer p {
+        font-size: 0.7em;;
+}}
