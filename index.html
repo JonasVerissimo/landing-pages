@@ -48,7 +48,7 @@
                 <p class="conteudo1__p1">WEB DESIGNER PROFISSIONAL</p>
                 <h1 class="conteudo1__h2">CRIO PÁGINAS RÁPIDAS, BONITAS E QUE CONVERTEM!</h1>
                 <p class="conteudo1__p2">Transforme visitantes em clientes com uma landing page de alta conversão.</p>
-                <a href="https://api.whatsapp.com/send?phone=5511985340091&text=Ol%C3%A1%20Jonas!%20Vim%20pelo%20seu%20site,%20gostaria%20de%20uma%20landing%20page%20para%20o%20meu%20neg%C3%B3cio..." target="_blank">
+                <a id="link-contato1" href="https://api.whatsapp.com/send?phone=5511986434618&text=Oi%20Jonas!%20Gostaria%20de%20um%20or%C3%A7amento%2C%20vim%20pela%20sua%20landing%20page." target="_blank">
                     <img src="/landing-pages/assets/icones/Botão Nova LP.svg" alt="botão">
                 </a>
             </div>
@@ -78,7 +78,7 @@
                     <p>Todas as páginas otimizadas com carregamento super rápido.                    </p>
                 </div>
             </div>
-            <a href="https://api.whatsapp.com/send?phone=5511985340091&text=Ol%C3%A1%20Jonas!%20Vim%20pelo%20seu%20site,%20gostaria%20de%20uma%20landing%20page%20para%20o%20meu%20neg%C3%B3cio..." target="_blank">
+            <a id="link-contato2" href="https://api.whatsapp.com/send?phone=5511986434618&text=Oi%20Jonas!%20Gostaria%20de%20um%20or%C3%A7amento%2C%20vim%20pela%20sua%20landing%20page." target="_blank">
                 <img src="/landing-pages/assets/icones/Botão Nova LP.svg" alt="botão">
             </a>
         </div>
@@ -98,5 +98,49 @@
     <footer>
         <p>JONAS VERÍSSIMO © CNPJ 37.543.726/0001-80</p>
     </footer>
+    <!-- Script para atualizar o link da tag a -->
+    <script>
+      function atualizarLink(idTagA) {
+        // Verifica se existe um parâmetro UTM na URL
+        if (location.search.indexOf('utm_source=') >= 0) {
+
+          // Obtém o valor do parâmetro utm_source
+          const utm_source = new URLSearchParams(location.search).get('utm_source');
+
+          // Obtém a tag "a" por seu id
+          const link_contato = document.getElementById(idTagA);
+
+          // Cria um objeto URL com o link atual da tag "a"
+          const url = new URL(link_contato.href);
+
+          // Cria um texto personalizado para o link, que inclui o valor do parâmetro "utm_source"
+          let textoLink = 'Oi Jonas! Gostaria de um orçamento, vim pelo ';
+
+          if (utm_source === 'Facebook') {
+            textoLink += 'Facebook.';
+          } else if (utm_source === 'Instagram') {
+            textoLink += 'Instagram.';
+          } else {
+            // Caso o valor do parâmetro "utm_source" não seja "Google" ou "Instagram",
+            // utiliza apenas o texto padrão
+            textoLink += 'seu site.';
+          }
+
+          // Codifica o texto do link para inserir na URL
+          const textoCodificado = textoLink.replace(/\n/g, '%20');
+
+
+          // Concatena o texto codificado na mensagem de texto do link
+          url.searchParams.set('text', textoCodificado);
+
+          // Atualiza o link da tag "a" com o texto personalizado
+          link_contato.href = url.href;
+        }
+      }
+
+      // Chama a função atualizarLink para cada tag "a" desejada
+      atualizarLink('link-contato1');
+      atualizarLink('link-contato2');
+    </script>
 </body>
 </html>
